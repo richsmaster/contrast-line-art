@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SGM – نظام الإدارة الذكية للمولدات | Smart Generators Management</title>
+  <meta name="description" content="SGM هي المنصة الذكية الرائدة لمراقبة المولدات الكهربائية في الوقت الفعلي، وإدارة المشتركين، والدفع الإلكتروني، وخرائط GIS — نحو شفافية وكفاءة في إدارة الطاقة." />
+  <meta name="keywords" content="نظام إدارة المولدات، SGM، مراقبة المولدات، إدارة الطاقة، فاتورة إلكترونية، خريطة GIS، الأنبار" />
+  <meta property="og:title" content="SGM – نظام الإدارة الذكية للمولدات" />
+  <meta property="og:description" content="المنصة الذكية لإدارة شبكات المولدات بمراقبة فورية، تحليلات متقدمة، وتصميم موبايل أول." />
+  <meta property="og:type" content="website" />
+
+  <!-- IBM Plex Sans Arabic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================
+       NAVBAR
+  ============================= -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <div class="logo-icon"><i class="fas fa-bolt"></i></div>
+        <div class="logo-text">
+          <span class="logo-main">SGM</span>
+          <span class="logo-sub">نظام إدارة المولدات الذكية</span>
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="#features" class="nav-link" id="nav-features">المميزات</a>
+        <a href="#systems" class="nav-link" id="nav-systems">الأنظمة</a>
+        <a href="#benefits" class="nav-link" id="nav-benefits">الفوائد</a>
+        <a href="anbar.html" class="nav-link nav-link-anbar" id="nav-anbar">
+          <i class="fas fa-landmark"></i>
+          محافظة الأنبار
+        </a>
+        <a href="#contact" class="nav-link" id="nav-contact">تواصل معنا</a>
+      </div>
+
+      <div class="nav-actions">
+        <div class="lang-toggle" id="lang-toggle">
+          <button class="lang-btn active" id="btn-ar" onclick="setLang('ar')">ع</button>
+          <button class="lang-btn" id="btn-en" onclick="setLang('en')">En</button>
+        </div>
+        <a href="launch.html" class="btn-primary nav-cta" id="nav-cta" data-ar="ابدأ الآن" data-en="Get Started">
+          <i class="fas fa-shield-halved"></i>
+          ابدأ الآن
+        </a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="القائمة">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#features" class="mobile-link" id="mob-features">المميزات</a></li>
+      <li><a href="#systems"  class="mobile-link" id="mob-systems">الأنظمة</a></li>
+      <li><a href="#benefits" class="mobile-link" id="mob-benefits">الفوائد</a></li>
+      <li><a href="anbar.html" class="mobile-link mobile-link-anbar" id="mob-anbar">
+        <i class="fas fa-landmark"></i> محافظة الأنبار
+      </a></li>
+      <li><a href="#contact"  class="mobile-link" id="mob-contact">تواصل معنا</a></li>
+    </ul>
+  </div>
+
+  <!-- ============================
+       HERO SECTION
+  ============================= -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge" id="hero-badge">
+          <i class="fas fa-microchip"></i>
+          <span>الجيل القادم في إدارة الطاقة</span>
+        </div>
+        <h1 class="hero-title" id="hero-title">
+          <span class="gradient-text">نظام إدارة</span><br/>
+          <span class="white-text">المولدات الذكية</span>
+        </h1>
+        <p class="hero-subtitle" id="hero-subtitle">
+          منصة ذكية متكاملة لمراقبة المولدات الكهربائية في الوقت الفعلي،
+          وإدارة المشتركين، والفواتير الإلكترونية، وخرائط GIS التفاعلية —
+          نحو شفافية حقيقية وكفاءة في خدمة المجتمع.
+        </p>
+        <div class="hero-cta" id="hero-cta">
+          <a href="launch.html" class="btn-primary" id="btn-explore" data-ar="ادخل للنظام" data-en="Enter System">
+            <i class="fas fa-shield-halved"></i>
+            ادخل للنظام
+          </a>
+          <a href="#features" class="btn-secondary" id="btn-systems" data-ar="استكشف المميزات" data-en="Explore Features">
+            <i class="fas fa-layer-group"></i>
+            استكشف المميزات
+          </a>
+        </div>
+        <div class="hero-stats" id="hero-stats">
+          <div class="hero-stat">
+            <span class="stat-num" data-target="500">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">مولد مُدار</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="stat-num" data-target="50000">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">مشترك نشط</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="stat-num" data-target="99">0</span><span class="stat-suffix">%</span>
+            <span class="stat-label">وقت تشغيل المنصة</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" id="hero-visual">
+        <div class="phone-mockup-wrapper">
+          <div class="phone-mockup main-phone" id="main-phone">
+            <div class="phone-screen">
+              <div class="app-screen">
+                <div class="app-header">
+                  <div class="app-logo-small"><i class="fas fa-bolt"></i></div>
+                  <span>لوحة SGM</span>
+                  <div class="app-notif"><i class="fas fa-bell"></i></div>
+                </div>
+                <div class="app-status-card">
+                  <div class="status-top">
+                    <span class="status-label">مولد #G-007</span>
+                    <span class="status-badge online">يعمل</span>
+                  </div>
+                  <div class="status-metrics">
+                    <div class="metric">
+                      <i class="fas fa-bolt"></i>
+                      <span class="metric-val">220V</span>
+                      <span class="metric-name">فولت</span>
+                    </div>
+                    <div class="metric">
+                      <i class="fas fa-tachometer-alt"></i>
+                      <span class="metric-val">48A</span>
+                      <span class="metric-name">أمبير</span>
+                    </div>
+                    <div class="metric">
+                      <i class="fas fa-fire"></i>
+                      <span class="metric-val">72%</span>
+                      <span class="metric-name">وقود</span>
+                    </div>
+                  </div>
+                  <div class="fuel-bar">
+                    <div class="fuel-fill" style="width:72%"></div>
+                  </div>
+                </div>
+                <div class="app-mini-map">
+                  <div class="map-pin pin1"><i class="fas fa-map-marker-alt"></i></div>
+                  <div class="map-pin pin2"><i class="fas fa-map-marker-alt"></i></div>
+                  <div class="map-pin pin3"><i class="fas fa-map-marker-alt"></i></div>
+                  <div class="map-grid-lines"></div>
+                  <span class="map-label">خريطة GIS المباشرة</span>
+                </div>
+                <div class="app-subs">
+                  <span class="subs-title">المشتركون النشطون</span>
+                  <div class="subs-list">
+                    <div class="sub-item">
+                      <div class="sub-avatar av1">أ</div>
+                      <div class="sub-info"><span>أحمد خالد</span><small>وحدة 3 · مدفوع</small></div>
+                      <span class="sub-status paid">✓</span>
+                    </div>
+                    <div class="sub-item">
+                      <div class="sub-avatar av2">س</div>
+                      <div class="sub-info"><span>سارة محمد</span><small>وحدة 7 · معلق</small></div>
+                      <span class="sub-status pending">!</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="float-card fc1" id="float-card-1">
+            <i class="fas fa-check-circle fc-icon green"></i>
+            <div>
+              <strong>تم استلام الدفعة</strong>
+              <small>مولد #G-012 · 35,000 دينار</small>
+            </div>
+          </div>
+          <div class="float-card fc2" id="float-card-2">
+            <i class="fas fa-chart-line fc-icon blue"></i>
+            <div>
+              <strong>98.7% وقت التشغيل</strong>
+              <small>آخر 30 يوماً</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator" id="scroll-indicator">
+      <div class="scroll-dot"></div>
+      <span>مرر للاستكشاف</span>
+    </div>
+  </section>
+
+  <!-- ============================
+       ANBAR BANNER
+  ============================= -->
+  <section class="anbar-banner" id="anbar-banner">
+    <div class="section-container">
+      <div class="anbar-banner-content">
+        <div class="anbar-banner-icon">
+          <i class="fas fa-landmark"></i>
+        </div>
+        <div class="anbar-banner-text">
+          <h3>نظام SGM في خدمة محافظة الأنبار</h3>
+          <p>نظام مخصص لإدارة شبكات المولدات في جميع أقضية المحافظة — من الرمادي إلى القائم — بشفافية كاملة ورقمنة متكاملة.</p>
+        </div>
+        <a href="anbar.html" class="btn-primary btn-anbar" id="btn-anbar-page">
+          <i class="fas fa-arrow-left"></i>
+          اكتشف صفحة الأنبار
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       FEATURES SECTION
+  ============================= -->
+  <section class="features" id="features">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-tag" id="feat-tag">المنصة الشاملة</div>
+        <h2 class="section-title" id="feat-title">كل ما تحتاجه في <span class="gradient-text">منصة واحدة</span></h2>
+        <p class="section-desc" id="feat-desc">من المراقبة الفورية إلى الفوترة والتقارير — SGM يوحّد إدارة المولدات في بيئة رقمية متكاملة.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-satellite-dish"></i></div>
+          <h3 class="feature-title">مراقبة IoT فورية</h3>
+          <p class="feature-desc">بيانات الفولت والأمبير والوقود مباشرةً من المولدات عبر تقنية WebSocket في الوقت الفعلي.</p>
+          <div class="feature-tags"><span>IoT</span><span>Real-time</span><span>WebSocket</span></div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+          <h3 class="feature-title">فوترة إلكترونية آلية</h3>
+          <p class="feature-desc">نظام دفع ذكي يحسب الاستهلاك تلقائياً ويصدر الفواتير للمشتركين مع سجل تدقيق كامل.</p>
+          <div class="feature-tags"><span>Auto-billing</span><span>Audit Trail</span></div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-map-location-dot"></i></div>
+          <h3 class="feature-title">خرائط GIS تفاعلية</h3>
+          <p class="feature-desc">تصور جغرافي كامل لشبكة المولدات مع إمكانية التخطيط والمراقبة والاستجابة الفورية.</p>
+          <div class="feature-tags"><span>Leaflet</span><span>GeoJSON</span><span>Realtime</span></div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-bell"></i></div>
+          <h3 class="feature-title">تنبيهات ذكية فورية</h3>
+          <p class="feature-desc">إشعارات فورية عند انخفاض الوقود، الأعطال، أو تجاوز حدود التشغيل لكل مولد.</p>
+          <div class="feature-tags"><span>Push Alerts</span><span>Smart Detection</span></div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+          <h3 class="feature-title">تحليلات وتقارير متقدمة</h3>
+          <p class="feature-desc">لوحات بيانات تفاعلية مع تحليلات الأداء والإيرادات والكفاءة لكل مولد وكل قضاء.</p>
+          <div class="feature-tags"><span>Analytics</span><span>KPI Dashboard</span></div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-shield-halved"></i></div>
+          <h3 class="feature-title">أمان وشفافية كاملة</h3>
+          <p class="feature-desc">توثيق إلكتروني لكل عملية مع تحكم دقيق في الصلاحيات لضمان الشفافية والمساءلة.</p>
+          <div class="feature-tags"><span>Encrypted</span><span>Verified</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       SYSTEMS SECTION
+  ============================= -->
+  <section class="systems" id="systems">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-tag" id="sys-tag">البنية التقنية</div>
+        <h2 class="section-title" id="sys-title">ثلاث بوابات <span class="gradient-text">متكاملة</span></h2>
+        <p class="section-desc" id="sys-desc">كل بوابة مُصممة لاحتياجات محددة — من الرقابة المركزية إلى خدمة المواطن.</p>
+      </div>
+      <div class="systems-grid">
+        <div class="system-card sc-admin">
+          <div class="sc-header">
+            <div class="sc-icon"><i class="fas fa-shield-halved"></i></div>
+            <div class="sc-badge admin-badge">Admin</div>
+          </div>
+          <h3>بوابة الإدارة</h3>
+          <p>لوحة تحكم مركزية للمسؤولين مع خرائط GIS، تقارير شاملة، وإدارة كاملة لجميع المولدات والمشتركين.</p>
+          <ul class="sc-features">
+            <li><i class="fas fa-check"></i> خريطة GIS تفاعلية</li>
+            <li><i class="fas fa-check"></i> إدارة المولدات والمشغّلين</li>
+            <li><i class="fas fa-check"></i> تقارير مالية وتشغيلية</li>
+            <li><i class="fas fa-check"></i> نظام الصلاحيات المتقدم</li>
+          </ul>
+          <a href="launch.html" class="sc-btn">دخول الإدارة <i class="fas fa-arrow-left"></i></a>
+        </div>
+        <div class="system-card sc-operator">
+          <div class="sc-header">
+            <div class="sc-icon"><i class="fas fa-bolt"></i></div>
+            <div class="sc-badge operator-badge">Operator</div>
+          </div>
+          <h3>بوابة المشغّلين</h3>
+          <p>واجهة مخصصة لأصحاب المولدات لمراقبة المولدات في الوقت الفعلي وإدارة المشتركين والفواتير.</p>
+          <ul class="sc-features">
+            <li><i class="fas fa-check"></i> مراقبة المولدات المباشرة</li>
+            <li><i class="fas fa-check"></i> إدارة قوائم المشتركين</li>
+            <li><i class="fas fa-check"></i> إصدار وتتبع الفواتير</li>
+            <li><i class="fas fa-check"></i> تنبيهات الأعطال الفورية</li>
+          </ul>
+          <a href="launch.html" class="sc-btn">دخول المشغّلين <i class="fas fa-arrow-left"></i></a>
+        </div>
+        <div class="system-card sc-citizen">
+          <div class="sc-header">
+            <div class="sc-icon"><i class="fas fa-users"></i></div>
+            <div class="sc-badge citizen-badge">Citizen</div>
+          </div>
+          <h3>بوابة المواطنين</h3>
+          <p>واجهة بسيطة وسهلة للمشتركين للاطلاع على فواتيرهم وحالة الاشتراك والتواصل مع المشغّل.</p>
+          <ul class="sc-features">
+            <li><i class="fas fa-check"></i> عرض الفواتير والمدفوعات</li>
+            <li><i class="fas fa-check"></i> حالة الاشتراك الحية</li>
+            <li><i class="fas fa-check"></i> التواصل مع المشغّل</li>
+            <li><i class="fas fa-check"></i> سجل الاستهلاك التاريخي</li>
+          </ul>
+          <a href="launch.html" class="sc-btn">دخول المواطنين <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       BENEFITS / STATS
+  ============================= -->
+  <section class="benefits" id="benefits">
+    <div class="section-container">
+      <div class="benefits-grid">
+        <div class="stats-left">
+          <div class="section-tag" id="ben-tag">لماذا SGM؟</div>
+          <h2 class="section-title" id="ben-title">أرقام تتحدث <span class="gradient-text">عن نفسها</span></h2>
+          <p class="section-desc" id="ben-desc">SGM يحوّل الفوضى إلى نظام — شفافية كاملة في قطاع المولدات لخدمة المجتمع.</p>
+          <div class="benefits-list" id="ben-list">
+            <div class="benefit-item">
+              <div class="bi-icon"><i class="fas fa-clock"></i></div>
+              <div><h4>مراقبة على مدار الساعة</h4><p>بيانات فورية 24/7 من كل مولد في الشبكة</p></div>
+            </div>
+            <div class="benefit-item">
+              <div class="bi-icon"><i class="fas fa-hand-holding-dollar"></i></div>
+              <div><h4>تحصيل أكثر كفاءة</h4><p>فواتير إلكترونية واضحة تقلل النزاعات وتزيد التحصيل</p></div>
+            </div>
+            <div class="benefit-item">
+              <div class="bi-icon"><i class="fas fa-eye"></i></div>
+              <div><h4>شفافية مع الجهات الرقابية</h4><p>تقارير فورية وموثقة للجهات الحكومية المختصة</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="stats-right">
+          <div class="stat-card">
+            <div class="sc-num" data-target="500">0</div>
+            <div class="sc-suffix">مولد+</div>
+            <div class="sc-label">تحت المراقبة الفورية</div>
+            <div class="sc-bar"><div class="sc-fill" style="width:85%"></div></div>
+          </div>
+          <div class="stat-card">
+            <div class="sc-num" data-target="50000">0</div>
+            <div class="sc-suffix">مشترك+</div>
+            <div class="sc-label">يستخدمون المنصة يومياً</div>
+            <div class="sc-bar"><div class="sc-fill" style="width:70%"></div></div>
+          </div>
+          <div class="stat-card">
+            <div class="sc-num" data-target="99">0</div>
+            <div class="sc-suffix">%</div>
+            <div class="sc-label">وقت تشغيل المنصة</div>
+            <div class="sc-bar"><div class="sc-fill" style="width:99%"></div></div>
+          </div>
+          <div class="stat-card">
+            <div class="sc-num" data-target="3">0</div>
+            <div class="sc-suffix">ثانية</div>
+            <div class="sc-label">متوسط تأخر البيانات</div>
+            <div class="sc-bar"><div class="sc-fill" style="width:97%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       APP CTA
+  ============================= -->
+  <section class="app-cta" id="app-cta">
+    <div class="section-container">
+      <div class="app-cta-grid">
+        <div class="app-cta-text">
+          <div class="section-tag" id="cta-tag">ابدأ الآن</div>
+          <h2 class="section-title" id="cta-title">جاهز لرقمنة <span class="gradient-text">شبكتك؟</span></h2>
+          <p class="section-desc" id="cta-desc">انضم إلى المبادرة وأدر شبكة المولدات باحترافية ودقة — بدون تكاليف باهظة.</p>
+          <div class="cta-buttons" id="cta-btns">
+            <a href="launch.html" class="btn-primary" id="cta-btn-main" data-ar="ادخل للنظام الآن" data-en="Enter System Now">
+              <i class="fas fa-shield-halved"></i>
+              ادخل للنظام الآن
+            </a>
+            <a href="#contact" class="btn-secondary" id="cta-btn-sec" data-ar="تواصل معنا" data-en="Contact Us">
+              <i class="fas fa-envelope"></i>
+              تواصل معنا
+            </a>
+          </div>
+        </div>
+        <div class="app-cta-visual">
+          <div class="cta-phones">
+            <div class="cta-phone cp1">
+              <div class="cp-screen">
+                <div class="cp-bar"></div>
+                <div class="cp-bar short"></div>
+                <div class="cp-circle"></div>
+              </div>
+            </div>
+            <div class="cta-phone cp2">
+              <div class="cp-screen">
+                <div class="cp-bar"></div>
+                <div class="cp-bar short"></div>
+                <div class="cp-circle" style="background:var(--clr-orange)"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       CONTACT SECTION
+  ============================= -->
+  <section class="contact" id="contact">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-tag" id="con-tag">تواصل معنا</div>
+        <h2 class="section-title" id="con-title">نحن هنا <span class="gradient-text">لمساعدتك</span></h2>
+        <p class="section-desc" id="con-desc">لأي استفسار عن النظام أو طلب تجربة مجانية — فريقنا جاهز للرد.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="ci-card">
+            <div class="ci-icon"><i class="fas fa-location-dot"></i></div>
+            <div>
+              <h4>الموقع</h4>
+              <p>الرمادي، محافظة الأنبار، العراق</p>
+            </div>
+          </div>
+          <div class="ci-card">
+            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>البريد الإلكتروني</h4>
+              <p>info@sgm-iq.com</p>
+            </div>
+          </div>
+          <div class="ci-card">
+            <div class="ci-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>الهاتف</h4>
+              <p>+964 792 000 0000</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name" id="lbl-name">الاسم الكامل</label>
+            <input type="text" id="name" placeholder="أدخل اسمك الكامل" required />
+          </div>
+          <div class="form-group">
+            <label for="email" id="lbl-email">البريد الإلكتروني</label>
+            <input type="email" id="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="role" id="lbl-role">الدور</label>
+            <select id="role">
+              <option value="">اختر دورك</option>
+              <option value="admin">جهة حكومية / إدارة</option>
+              <option value="operator">صاحب مولد / مشغّل</option>
+              <option value="citizen">مواطن / مشترك</option>
+              <option value="other">أخرى</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message" id="lbl-msg">الرسالة</label>
+            <textarea id="message" rows="4" placeholder="اكتب رسالتك هنا..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-submit" id="btn-submit">
+            <i class="fas fa-paper-plane"></i>
+            إرسال الرسالة
+          </button>
+          <div class="form-success" id="form-success">
+            <i class="fas fa-circle-check"></i>
+            تم إرسال رسالتك بنجاح! سنرد عليك قريباً.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       FOOTER
+  ============================= -->
+  <footer class="footer" id="footer">
+    <div class="section-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-icon"><i class="fas fa-bolt"></i></div>
+            <div>
+              <span class="logo-main">SGM</span>
+              <span class="logo-sub">Smart Generators Management</span>
+            </div>
+          </div>
+          <p>منصة ذكية متكاملة لإدارة ومراقبة شبكات المولدات الكهربائية في محافظة الأنبار، العراق.</p>
+        </div>
+        <div class="footer-links">
+          <h4>روابط سريعة</h4>
+          <ul>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#features">المميزات</a></li>
+            <li><a href="#systems">الأنظمة</a></li>
+            <li><a href="anbar.html">محافظة الأنبار</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>البوابات</h4>
+          <ul>
+            <li><a href="launch.html">بوابة الإدارة</a></li>
+            <li><a href="launch.html">بوابة المشغّلين</a></li>
+            <li><a href="launch.html">بوابة المواطنين</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>تواصل معنا</h4>
+          <p><i class="fas fa-location-dot"></i> الرمادي، محافظة الأنبار</p>
+          <p><i class="fas fa-envelope"></i> info@sgm-iq.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 SGM – Smart Generators Management. جميع الحقوق محفوظة.</p>
+        <p>مبني بـ ❤ لخدمة محافظة الأنبار</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="العودة للأعلى">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+  <script src="i18n.js"></script>
+</body>
+</html>

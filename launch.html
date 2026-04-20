@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>بوابة الدخول — SGM Dashboard</title>
+  <meta name="description" content="اختر بوابتك للدخول إلى نظام إدارة المولدات الذكية SGM" />
+
+  <!-- IBM Plex Sans Arabic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- SGM shared styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="launch.css" />
+</head>
+<body>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon"><i class="fas fa-bolt"></i></div>
+        <div class="logo-text">
+          <span class="logo-main">SGM</span>
+          <span class="logo-sub">نظام إدارة المولدات الذكية</span>
+        </div>
+      </a>
+      <a href="index.html" class="btn-nav-back">
+        <i class="fas fa-arrow-right"></i>
+        <span>العودة للرئيسية</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="launch-hero">
+    <!-- Background grid -->
+    <div class="launch-grid"></div>
+
+    <!-- Subtle radial glow -->
+    <div class="launch-glow"></div>
+
+    <div class="launch-container">
+
+      <!-- Left: Portal Cards -->
+      <div class="launch-left">
+
+        <!-- Header -->
+        <div class="launch-header">
+          <div class="launch-badge">
+            <span class="lb-dot"></span>
+            <span id="sys-status-text">النظام متصل</span>
+          </div>
+          <h1 class="launch-title">اختر <span class="gradient-text">بوابتك</span></h1>
+          <p class="launch-desc">كل بوابة مصممة لدور محدد في منظومة إدارة المولدات الذكية</p>
+        </div>
+
+        <!-- Portal Cards -->
+        <div class="portals-grid">
+
+          <!-- Admin Portal -->
+          <a href="http://localhost:3000/dashboard" class="portal-card pc-admin" id="portal-admin" target="_blank">
+            <div class="pc-icon">
+              <i class="fas fa-shield-halved"></i>
+            </div>
+            <div class="pc-content">
+              <h3>بوابة الإدارة</h3>
+              <p>التحكم الشامل والمركزي بمنظومة الطاقة</p>
+              <div class="pc-meta">
+                <span class="pc-tag">Admin</span>
+                <span class="pc-tag">KPI Dashboard</span>
+                <span class="pc-tag">GIS Map</span>
+              </div>
+            </div>
+            <div class="pc-arrow">
+              <i class="fas fa-arrow-left"></i>
+            </div>
+          </a>
+
+          <!-- Operator Portal -->
+          <a href="http://localhost:3000/owners" class="portal-card pc-operator" id="portal-operator" target="_blank">
+            <div class="pc-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <div class="pc-content">
+              <h3>بوابة أصحاب المولدات</h3>
+              <p>إدارة أصول التوليد والبيانات التشغيلية</p>
+              <div class="pc-meta">
+                <span class="pc-tag">Operators</span>
+                <span class="pc-tag">Billing</span>
+                <span class="pc-tag">Telemetry</span>
+              </div>
+            </div>
+            <div class="pc-arrow">
+              <i class="fas fa-arrow-left"></i>
+            </div>
+          </a>
+
+          <!-- Citizen Portal -->
+          <a href="http://localhost:3000/citizen" class="portal-card pc-citizen" id="portal-citizen" target="_blank">
+            <div class="pc-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="pc-content">
+              <h3>بوابة المواطنين</h3>
+              <p>الاستعلامات والخدمات الإلكترونية العامة</p>
+              <div class="pc-meta">
+                <span class="pc-tag">Citizens</span>
+                <span class="pc-tag">Billing</span>
+                <span class="pc-tag">Support</span>
+              </div>
+            </div>
+            <div class="pc-arrow">
+              <i class="fas fa-arrow-left"></i>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- Dashboard status notice -->
+        <div class="launch-notice" id="launch-notice">
+          <div class="ln-icon"><i class="fas fa-circle-info"></i></div>
+          <div class="ln-content">
+            <strong>لتشغيل الداشبورد</strong>
+            <p>شغّل هذا الأمر في المجلد <code>dashboard\</code> ثم عد وافتح أي بوابة:</p>
+            <div class="ln-cmd">
+              <code>npm run dev</code>
+              <button class="ln-copy" onclick="copyCmd()" title="نسخ الأمر">
+                <i class="fas fa-copy"></i>
+              </button>
+            </div>
+            <p class="ln-or">أو شغّل الملف <code>start-dashboard.bat</code> مباشرةً</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: System Info Panel -->
+      <div class="launch-right">
+
+        <!-- System brand -->
+        <div class="sys-brand">
+          <div class="sb-logo">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <div class="sb-info">
+            <h2>S.P.G.M.S</h2>
+            <p>Smart Power Grid Management System</p>
+          </div>
+        </div>
+
+        <!-- Anbar emblem -->
+        <div class="anbar-emblem">
+          <img
+            src="https://j.top4top.io/p_3749e3ihh1.png"
+            alt="شعار محافظة الأنبار"
+            class="anbar-logo"
+            onerror="this.style.display='none'"
+          />
+          <div class="ae-text">
+            <h3>محافظة الأنبار</h3>
+            <div class="ae-bar"></div>
+            <p>البوابة الإلكترونية الموحدة لإدارة المولدات الأهلية</p>
+          </div>
+        </div>
+
+        <!-- System stats -->
+        <div class="sys-stats">
+          <div class="ss-item">
+            <i class="fas fa-bolt"></i>
+            <div>
+              <strong>3,000+</strong>
+              <span>مولد مُدار</span>
+            </div>
+          </div>
+          <div class="ss-item">
+            <i class="fas fa-users"></i>
+            <div>
+              <strong>150,000+</strong>
+              <span>مشترك نشط</span>
+            </div>
+          </div>
+          <div class="ss-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <strong>99.9%</strong>
+              <span>وقت التشغيل</span>
+            </div>
+          </div>
+          <div class="ss-item">
+            <i class="fas fa-map-location-dot"></i>
+            <div>
+              <strong>12</strong>
+              <span>قضاء مغطى</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Version -->
+        <div class="sys-version">
+          <span class="sv-dot"></span>
+          <span>v2.0.26 • April 2026 • Supabase Realtime</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Navbar scroll
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // Check if dashboard is running
+    async function checkDashboard() {
+      const notice = document.getElementById('launch-notice');
+      const statusText = document.getElementById('sys-status-text');
+      try {
+        const res = await fetch('http://localhost:3000', { mode: 'no-cors', signal: AbortSignal.timeout(2000) });
+        // If no error thrown, server is likely up
+        notice.classList.add('notice-hidden');
+        statusText.textContent = 'الداشبورد متاح';
+        document.querySelector('.lb-dot').style.background = '#16a34a';
+      } catch {
+        notice.classList.remove('notice-hidden');
+        statusText.textContent = 'الداشبورد غير مشغّل';
+        document.querySelector('.lb-dot').style.background = '#e87722';
+      }
+    }
+
+    // Copy command
+    function copyCmd() {
+      navigator.clipboard.writeText('npm run dev').then(() => {
+        const btn = document.querySelector('.ln-copy');
+        btn.innerHTML = '<i class="fas fa-check"></i>';
+        setTimeout(() => { btn.innerHTML = '<i class="fas fa-copy"></i>'; }, 2000);
+      });
+    }
+
+    // Check on load and every 5 seconds
+    checkDashboard();
+    setInterval(checkDashboard, 5000);
+
+    // Portal click animation
+    document.querySelectorAll('.portal-card').forEach(card => {
+      card.addEventListener('click', function(e) {
+        this.classList.add('pc-loading');
+        const icon = this.querySelector('.pc-icon i');
+        icon.className = 'fas fa-spinner fa-spin';
+        setTimeout(() => {
+          this.classList.remove('pc-loading');
+          icon.className = this.dataset.icon;
+        }, 2000);
+      });
+    });
+    // Save icons for reset
+    document.getElementById('portal-admin').dataset.icon    = 'fas fa-shield-halved';
+    document.getElementById('portal-operator').dataset.icon = 'fas fa-bolt';
+    document.getElementById('portal-citizen').dataset.icon  = 'fas fa-users';
+  </script>
+
+</body>
+</html>
