@@ -20,6 +20,42 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Deploy on Netlify
+
+### Automatic Deployment (Recommended)
+
+1. **Connect to Netlify:**
+   - Go to [netlify.com](https://netlify.com)
+   - Sign in or create an account
+   - Click "Add new site" → "Import an existing project"
+
+2. **Connect GitHub Repository:**
+   - Choose "Deploy with GitHub"
+   - Authorize Netlify to access your GitHub account
+   - Select repository: `richsmaster/contrast-line-art`
+   - Click "Deploy site"
+
+3. **Build Settings (should auto-detect):**
+   - **Build command:** `npm run build`
+   - **Publish directory:** `out`
+   - **Node version:** 18.x or higher
+
+4. **Environment Variables (if needed):**
+   - Add any required environment variables in Netlify dashboard
+   - For Supabase: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+
+### Manual Deployment
+
+If you prefer manual deployment:
+
+```bash
+# Build the project
+npm run build
+
+# Deploy to Netlify (install Netlify CLI first)
+npx netlify-cli deploy --prod --dir=out
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
